@@ -5,9 +5,9 @@
 #
 #オプション指定
 #DigitBuilder:
-# TextBuilder		= 文字列を認識	
-# WordBoxBuilder	= 単語単位で文字認識 + BoundingBox	
-# LineBoxBuilder	= 行単位で文字認識 + BoundingBox	
+# TextBuilder		= 文字列を認識
+# WordBoxBuilder	= 単語単位で文字認識 + BoundingBox
+# LineBoxBuilder	= 行単位で文字認識 + BoundingBox
 # DigitBuilder		= 数字 / 記号を認識		←今回はこれを使用
 # DigitLineBoxBuilder	= 数字 / 記号を認識 + BoundingBox
 #
@@ -48,7 +48,7 @@ def get_digit_ocr_info(img):
 	return digit_txt
 
 def main():
-	im = Image.open('/home/pi/img007.jpg')	#読み込み画像の場所
+	im = Image.open('/home/pi/ocr/img007.jpg')	#読み込み画像の場所
 	get_digit_ocr_info(im)
 
 if __name__ == '__main__':
