@@ -48,7 +48,7 @@ def get_digit_ocr_info(img):
 	return digit_txt
 
 def main():
-	im = Image.open('/home/pi/ocr/img007.jpg')	#読み込み画像の場所
+	im = Image.open('/home/pi/ocr/img001.jpg')	#読み込み画像の場所
 	get_digit_ocr_info(im)
 
 if __name__ == '__main__':
