@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-# test06.py
+# ocr01.py
 # 2021/11/27 Nakagomi
 #
 #オプション指定
