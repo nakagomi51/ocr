@@ -9,9 +9,7 @@ import pyocr.builders
 #img : PIL image
 def get_digit_ocr_info(img):
 	result = None
-
 	width, height=img.size
-
 	tools = pyocr.get_available_tools()
 	tool = tools[0]
 	langs = tool.get_available_languages()
