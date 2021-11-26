@@ -37,7 +37,7 @@ def get_digit_ocr_info(img):
 	tools = pyocr.get_available_tools()
 	tool = tools[0]
 	langs = tool.get_available_languages()
-	lang = 'eng'	#言語設定で、「英語」を選択
+	lang = 'eng'	#言語設定で、「英語」を選択（日本語は'jpn'）
 
 	digit_txt = tool.image_to_string(
 		img,
