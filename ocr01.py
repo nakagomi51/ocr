@@ -44,12 +44,13 @@ def get_digit_ocr_info(img):
 		lang=lang,
 		builder=pyocr.builders.DigitBuilder(tesseract_layout=6)
 	)
-	print(digit_txt)
+	#print(digit_txt)
 	return digit_txt
 
 def main():
-	im = Image.open('/home/pi/ocr/img001.jpg')	#読み込み画像の場所
-	get_digit_ocr_info(im)
+	img = Image.open('/home/pi/ocr/img001.jpg')	#読み込み画像の場所
+	ret = get_digit_ocr_info(img)
+	print(ret)
 
 if __name__ == '__main__':
 	main()
