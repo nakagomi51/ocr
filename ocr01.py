@@ -25,6 +25,7 @@ def get_digit_ocr_info(img):
 
 def main():
 	img = Image.open('/home/pi/ocr/img001.jpg')	#読み込み画像の場所
+	#img = Image.open('/home/pi/Pictures/img001.jpg')	#読み込み画像の場所
 	ret = get_digit_ocr_info(img)
 	print(ret)					#OCR変換した結果を表示
 
